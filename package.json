@@ -1,0 +1,40 @@
+{
+  "title": "Digital Profile",
+  "name": "dharmik-digital-profile",
+  "version": "4.0.0-beta.2",
+  "description": "Digital Profile for machine learning engineer",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "license": "MIT",
+  "author": "Dharmik Mehta",
+  "contributors": [
+    "Dharmik Mehta (https://www.linkedin.com/in/dharmikm9/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dharmikm9/digital-profile.git"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "devicons": "^1.8.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.6",
+    "run": "^1.5.0",
+    "simple-line-icons": "^2.4.1"
+  },
+  "devDependencies": {
+    "browser-sync": "3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "4.3.0",
+    "gulp-header": "2.0.9",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "5.1.0",
+    "gulp-uglify": "3.0.2"
+  }
+}
