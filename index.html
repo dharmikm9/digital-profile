@@ -6,16 +6,20 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R6X3SZ6D2T"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-  
+
     gtag('config', 'G-R6X3SZ6D2T');
   </script>
-  
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="Dharmik Mehta Digital Profile" />
-  <meta name="author" content="Dharmik" />
+  <meta name="description"
+    content="Dharmik Mehta - Senior AI Engineer specializing in NLP, Machine Learning, and Generative AI" />
+  <meta name="author" content="Dharmik Mehta" />
+  <meta name="keywords"
+    content="AI Engineer, Dharmik Mehta, Machine Learning, NLP, Generative AI, Python, Retrieval-Augmented Generation (RAG), LLM Fine-tuning, Agentic AI, Cloud Computing" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
   <title>Dharmik Mehta - Digital Profile</title>
 
@@ -29,14 +33,61 @@
     rel="stylesheet" />
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
   <!-- <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet" /> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" /> -->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet" />
+
+  <!-- Loading Spinner Styles -->
+  <style>
+    #loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.5s ease-out;
+    }
+
+    #loader {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #bd5d38;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loader-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
 </head>
 
 <body id="page-top">
+  <!-- Loading Spinner -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+  </div>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Digital Profile</span>
@@ -192,28 +243,34 @@
       <div class="my-auto">
         <h2 class="mb-5">Education</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <div class="resume-item d-flex flex-column flex-md-row mb-4">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Gujarat Technological University</h3>
-            <div class="subheading mb-3">Bachelor of Engineering</div>
-            <div>Information and Technology</div>
-            <p>CGPA: 8.03</p>
+            <div class="subheading mb-3">Bachelor of Engineering in Information and Technology</div>
+            <p>CGPA: 8.04</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">2015 - 2019</span>
           </div>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row">
+        <div class="resume-item d-flex flex-column flex-md-row mb-4">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">
-              Gujarat Secondary and Higher Secondary Education Board
-            </h3>
-            <div class="subheading mb-3">Science</div>
+            <h3 class="mb-0">Gujarat Secondary and Higher Secondary Education Board</h3>
+            <div class="subheading mb-3">12th Science</div>
             <p>Percentage: 63.47</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">2013 - 2015</span>
+          </div>
+        </div>
+        <div class="resume-item d-flex flex-column flex-md-row mb-4">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Gujarat Secondary and Higher Secondary Education Board</h3>
+            <div class="subheading mb-3">10th Standard</div>
+            <p>Percentage: 83.33</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2012 - 2013</span>
           </div>
         </div>
       </div>
@@ -225,75 +282,115 @@
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <ul class="list-inline list-icons">
+          <!-- AI/ML Tools -->
           <li class="list-inline-item">
-            <i class="devicons devicon-python-plain"></i>
+            <i class="devicons devicon-python-plain" title="Python"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-pandas-original"></i>
+            <i class="devicons devicon-pandas-plain" title="Pandas"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-numpy-original"></i>
+            <i class="devicons devicon-scikitlearn-plain" title="Scikit-learn"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-tensorflow-original"></i>
+            <i class="devicons devicon-numpy-plain" title="NumPy"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-flask-original"></i>
+            <i class="devicons devicon-keras-plain" title="Keras"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-googlecloud-plain"></i>
+            <i class="devicons devicon-tensorflow-original" title="TensorFlow"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-amazonwebservices-original"></i>
+            <i class="devicons devicon-pytorch-original" title="PyTorch"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicon-kaggle-original" title="Kaggle"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-opencv-plain" title="OpenCV"></i>
+          </li>
+          <!-- Web Frameworks -->
+          <li class="list-inline-item">
+            <i class="devicons devicon-flask-original" title="Flask"></i>
+          </li>
+          <!-- Cloud Platforms -->
+          <li class="list-inline-item">
+            <i class="devicons devicon-googlecloud-plain" title="Google Cloud Platform"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicon-amazonwebservices-plain-wordmark" title="Amazon Web Services"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicon-azure-plain" title="Microsoft Azure"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicon-terraform-plain" title="Terraform"></i>
           </li>
 
+          <!-- Development Tools -->
           <li class="list-inline-item">
-            <i class="devicons devicon-jupyter-plain"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-linux-plain"></i>
+            <i class="devicons devicon-jupyter-plain" title="Jupyter"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-mongodb-plain"></i>
+            <i class="devicons devicon-linux-plain" title="Linux"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-nodejs-plain"></i>
+            <i class="devicon-github-original" title="GitHub"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-r-original"></i>
+            <i class="devicon devicon-git-plain" title="Git"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-git-plain"></i>
+            <i class="devicons devicon-azuredevops-plain" title="Azure DevOps"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-vscode-plain"></i>
+            <i class="devicons devicon-apacheairflow-plain" title="Apache Airflow"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-pycharm-plain"></i>
+            <i class="devicons devicon-docker-plain" title="Docker"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-java-plain"></i>
+            <i class="devicons devicon-kubernetes-plain" title="Kubernetes"></i>
+          </li>
+
+          <!-- Databases -->
+          <li class="list-inline-item">
+            <i class="devicons devicon-mongodb-plain" title="MongoDB"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-electron-original"></i>
+            <i class="devicons devicon-postgresql-plain" title="PostgreSQL"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-docker-plain"></i>
+            <i class="devicons devicon-mysql-plain" title="MySQL"></i>
+          </li>
+
+          <!-- Programming Languages -->
+          <li class="list-inline-item">
+            <i class="devicons devicon-java-plain" title="Java"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicons-css3"></i>
+            <i class="devicons devicon-html5-plain-wordmark" title="HTML5"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicons-javascript"></i>
-          </li>
-          <li class="list-inline-item"></li>
-          <i class="devicons devicon-kaggle-original"></i>
-          </li>
-          <li class="list-inline-item"></li>
-          <i class="devicons devicon-fastapi"></i>
+            <i class="devicons devicon-css3-plain-wordmark" title="CSS3"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicon-anaconda-original"></i>
+            <i class="devicons devicon-javascript-plain" title="JavaScript"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicon-json-plain" title="JSON"></i>
+          </li>
+
+
+          <!-- IDEs & Tools -->
+          <li class="list-inline-item">
+            <i class="devicons devicon-vscode-plain" title="Visual Studio Code"></i>
+          </li>
+
+          <!-- Other Tools -->
+          <li class="list-inline-item">
+            <i class="devicons devicon-apache-plain" title="Apache"></i>
           </li>
         </ul>
 
@@ -446,6 +543,20 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+
+  <!-- Loading Animation Script -->
+  <script>
+    window.addEventListener('load', function () {
+      // Hide loader after page is fully loaded
+      const loader = document.getElementById('loader-wrapper');
+      loader.classList.add('loader-hidden');
+
+      // Remove loader from DOM after animation
+      setTimeout(function () {
+        loader.style.display = 'none';
+      }, 500);
+    });
+  </script>
 </body>
 
 </html>
