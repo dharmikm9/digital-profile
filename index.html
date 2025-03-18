@@ -153,6 +153,15 @@
       margin-bottom: 2rem;
     }
 
+    /* Projects and Awards specific styles */
+    #projects p,
+    #awards p,
+    #projects .fa-ul li,
+    #awards .fa-ul li,
+    #skills .fa-ul li {
+      text-align: left;
+    }
+
     /* Responsive Styles */
     @media (max-width: 768px) {
       body {
@@ -189,7 +198,14 @@
 
       .resume-date {
         min-width: auto;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 0.9rem;
+        padding-left: 1.5rem;
+      }
+
+      .resume-item {
+        margin-bottom: 2.5rem;
       }
 
       .btn-primary {
@@ -207,6 +223,15 @@
         width: 2rem !important;
         height: 2rem !important;
         line-height: 2rem !important;
+      }
+
+      /* Ensure projects, awards, and workflow sections maintain left alignment */
+      #projects p,
+      #awards p,
+      #projects .fa-ul li,
+      #awards .fa-ul li,
+      #skills .fa-ul li {
+        text-align: left;
       }
     }
 
@@ -231,6 +256,15 @@
         padding: 1rem !important;
       }
 
+      .resume-date {
+        font-size: 0.85rem;
+        padding-left: 1rem;
+      }
+
+      .resume-item {
+        margin-bottom: 2rem;
+      }
+
       .btn-primary {
         width: 100%;
         margin-bottom: 1rem;
@@ -238,11 +272,23 @@
 
       .d-flex.align-items-center {
         flex-direction: column;
-        align-items: flex-start !important;
+        align-items: center !important;
       }
 
       .list-social-icons {
         margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Ensure projects, awards, and workflow sections maintain left alignment */
+      #projects p,
+      #awards p,
+      #projects .fa-ul li,
+      #awards .fa-ul li,
+      #skills .fa-ul li {
+        text-align: left;
       }
     }
   </style>
@@ -525,7 +571,7 @@
         <h2 class="mb-5">Skills</h2>
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline list-icons">
+        <ul class="list-inline list-icons mb-3">
           <!-- AI/ML Tools -->
           <li class="list-inline-item">
             <i class="devicons devicon-python-plain" title="Python"></i>
@@ -552,7 +598,7 @@
             <i class="devicons devicon-kaggle-original" title="Kaggle"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-opencv-plain" title="OpenCV"></i>
+            <i class="devicons devicon-opencv-plain" title="OpenCV"></i>
           </li>
           <!-- Web Frameworks -->
           <li class="list-inline-item">
@@ -580,7 +626,7 @@
             <i class="devicons devicon-linux-plain" title="Linux"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-github-original" title="GitHub"></i>
+            <i class="devicons devicon-github-original" title="GitHub"></i>
           </li>
           <li class="list-inline-item">
             <i class="devicon devicon-git-plain" title="Git"></i>
