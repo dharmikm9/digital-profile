@@ -9,7 +9,36 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-R6X3SZ6D2T');
+    gtag('config', 'G-R6X3SZ6D2T', {
+      'anonymize_ip': true,
+      'send_page_view': true,
+      'allow_google_signals': true,
+      'allow_ad_personalization_signals': true,
+      'debug_mode': false
+    });
+
+    // Track outbound links
+    document.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A' && e.target.href) {
+        gtag('event', 'click', {
+          'event_category': 'outbound',
+          'event_label': e.target.href,
+          'transport_type': 'beacon'
+        });
+      }
+    });
+
+    // Track social media clicks
+    document.addEventListener('click', function (e) {
+      if (e.target.closest('.list-social-icons')) {
+        const socialPlatform = e.target.closest('a').href;
+        gtag('event', 'social_click', {
+          'event_category': 'social',
+          'event_label': socialPlatform,
+          'transport_type': 'beacon'
+        });
+      }
+    });
   </script>
 
   <meta charset="utf-8" />
