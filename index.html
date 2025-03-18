@@ -40,6 +40,213 @@
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet" />
 
+  <!-- Custom Font Styles -->
+  <style>
+    body {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .subheading {
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      margin-bottom: 2.5rem;
+    }
+
+    .subheading a {
+      font-weight: 600;
+      color: #bd5d38;
+    }
+
+    h1 {
+      font-size: 5.5rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .text-primary {
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: #bd5d38;
+    }
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #34495e;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .fa-ul li {
+      font-size: 1.1rem;
+      color: #34495e;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    /* Preserve devicon sizes */
+    .devicons,
+    .devicon {
+      font-size: 2.5rem !important;
+      width: 2.5rem !important;
+      height: 2.5rem !important;
+      line-height: 2.5rem !important;
+    }
+
+    .list-inline-item {
+      font-size: 1.1rem;
+    }
+
+    .btn-primary {
+      background-color: #bd5d38;
+      border-color: #bd5d38;
+      padding: 0.8rem 2rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #a44d2e;
+      border-color: #a44d2e;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(189, 93, 56, 0.2);
+    }
+
+    .btn-primary:focus {
+      box-shadow: 0 0 0 0.2rem rgba(189, 93, 56, 0.25);
+    }
+
+    .btn-primary i {
+      margin-right: 8px;
+    }
+
+    .resume-content {
+      flex: 1;
+      padding-right: 2rem;
+    }
+
+    .resume-date {
+      min-width: 200px;
+      text-align: right;
+    }
+
+    .resume-content p {
+      margin-bottom: 0;
+      text-align: justify;
+    }
+
+    .resume-item {
+      margin-bottom: 2rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      body {
+        font-size: 1rem;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+      }
+
+      .subheading {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .resume-content {
+        padding-right: 0;
+        margin-bottom: 1rem;
+      }
+
+      .resume-date {
+        min-width: auto;
+        margin-bottom: 1rem;
+      }
+
+      .btn-primary {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+      }
+
+      .list-inline-item {
+        font-size: 1rem;
+      }
+
+      .devicons,
+      .devicon {
+        font-size: 2rem !important;
+        width: 2rem !important;
+        height: 2rem !important;
+        line-height: 2rem !important;
+      }
+    }
+
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .subheading {
+        font-size: 1.2rem;
+      }
+
+      .resume-section {
+        padding: 1rem !important;
+      }
+
+      .btn-primary {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      .d-flex.align-items-center {
+        flex-direction: column;
+        align-items: flex-start !important;
+      }
+
+      .list-social-icons {
+        margin-top: 1rem;
+      }
+    }
+  </style>
+
   <!-- Loading Spinner Styles -->
   <style>
     #loader-wrapper {
@@ -130,39 +337,76 @@
           Dharmik
           <span class="text-primary">Mehta</span>
         </h1>
-        <div class="subheading mb-5">
+        <div class="subheading mb-5.9">
           AI/ML | GenAI - Engineer · Ahmedabad, India. ·
           <a href="mailto:dharmikmehta1998@email.com">dharmikmehta1998@email.com</a>
         </div>
-        <p class="mb-5">
-          I'm Machine Learning Engineer with a demonstrated track record of
-          success in Natural Language Processing (NLP) and Text Data Analysis
-          for over 5.5 years. I utilize my in-depth knowledge of cutting-edge
-          AI/ML techniques to extract actionable insights from massive
-          datasets. My proficiency in Python, SQL, and Java empowers me to
-          develop robust NLP algorithms that address real-world challenges.
-          Leveraging my strong foundation in Information Technology, I'm eager
-          to contribute my expertise and innovative thinking to a team at the
-          forefront of Generative AI and Large Language Models (LLMs).
+        <p class="mb-4">
+          Hello!
+          I'm Dharmik Mehta, a Senior AI Engineer with over 5.5 years of experience in Natural Language
+          Processing (NLP) and Text Data Analysis. My journey in AI/ML has been driven by a passion for transforming
+          complex data into meaningful insights and innovative solutions.
         </p>
-        <ul class="list-inline list-social-icons mb-0">
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/dharmikm9" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
+        <p class="mb-4">
+          At the forefront of AI innovation, I specialize in Retrieval-Augmented Generation (RAG), Large Language Models
+          (LLMs), and scalable GenAI solutions. My expertise spans across developing robust NLP algorithms, implementing
+          end-to-end ML pipelines, and creating high-impact AI applications that bridge cutting-edge research with
+          real-world challenges.
+        </p>
+        <p class="mb-4">
+          With a strong foundation in Information Technology and multiple industry certifications, I've successfully
+          delivered solutions that leverage state-of-the-art AI/ML techniques. My work focuses on:
+        </p>
+        <ul class="fa-ul mb-4">
+          <li>
+            <i class="fa-li fa fa-check text-primary"></i>
+            Building scalable GenAI solutions with RAG technology and open-source LLMs (LLaMA, Mistral, BERT)
           </li>
-          <li class="list-inline-item">
-            <a href="https://github.com/dharmikm9" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
+          <li>
+            <i class="fa-li fa fa-check text-primary"></i>
+            Fine-tuning and optimizing Large Language Models for specific domains
+          </li>
+          <li>
+            <i class="fa-li fa fa-check text-primary"></i>
+            Developing Agentic AI systems and autonomous decision-making frameworks
+          </li>
+          <li>
+            <i class="fa-li fa fa-check text-primary"></i>
+            Implementing MLOps practices with Docker, Kubernetes, and Airflow
+          </li>
+          <li>
+            <i class="fa-li fa fa-check text-primary"></i>
+            Designing and deploying cloud-native AI solutions on AWS, GCP, and Azure
           </li>
         </ul>
+        <p class="mb-4">
+          I'm passionate about pushing the boundaries of what's possible with AI and am always excited to collaborate on
+          cutting-edge projects. Whether you're looking to discuss potential opportunities, share ideas about AI/ML, or
+          explore innovative solutions, I'd love to connect!
+        </p>
+        <div class="d-flex align-items-center mb-4">
+          <a href="mailto:dharmikmehta1998@email.com" class="btn btn-primary btn-lg mr-4">
+            <i class="fa fa-envelope"></i> Let's Connect
+          </a>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/dharmikm9" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/dharmikm9" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
