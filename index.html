@@ -2,880 +2,913 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R6X3SZ6D2T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R6X3SZ6D2T"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-R6X3SZ6D2T', {
-      'anonymize_ip': true,
-      'send_page_view': true,
-      'allow_google_signals': true,
-      'allow_ad_personalization_signals': true,
-      'debug_mode': false
-    });
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-    // Track outbound links
-    document.addEventListener('click', function (e) {
-      if (e.target.tagName === 'A' && e.target.href) {
-        gtag('event', 'click', {
-          'event_category': 'outbound',
-          'event_label': e.target.href,
-          'transport_type': 'beacon'
+        gtag('js', new Date());
+
+        gtag('config', 'G-R6X3SZ6D2T', {
+            'anonymize_ip': true,
+            'send_page_view': true,
+            'allow_google_signals': true,
+            'allow_ad_personalization_signals': true,
+            'debug_mode': false
         });
-      }
-    });
 
-    // Track social media clicks
-    document.addEventListener('click', function (e) {
-      if (e.target.closest('.list-social-icons')) {
-        const socialPlatform = e.target.closest('a').href;
-        gtag('event', 'social_click', {
-          'event_category': 'social',
-          'event_label': socialPlatform,
-          'transport_type': 'beacon'
+        // Track outbound links
+        document.addEventListener('click', function (e) {
+            if (e.target.tagName === 'A' && e.target.href) {
+                gtag('event', 'click', {
+                    'event_category': 'outbound',
+                    'event_label': e.target.href,
+                    'transport_type': 'beacon'
+                });
+            }
         });
-      }
-    });
-  </script>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description"
-    content="Dharmik Mehta - Senior AI Engineer specializing in NLP, Machine Learning, and Generative AI" />
-  <meta name="author" content="Dharmik Mehta" />
-  <meta name="keywords"
-    content="AI Engineer, Dharmik Mehta, Machine Learning, NLP, Generative AI, Python, Retrieval-Augmented Generation (RAG), LLM Fine-tuning, Agentic AI, Cloud Computing" />
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+        // Track social media clicks
+        document.addEventListener('click', function (e) {
+            if (e.target.closest('.list-social-icons')) {
+                const socialPlatform = e.target.closest('a').href;
+                gtag('event', 'social_click', {
+                    'event_category': 'social',
+                    'event_label': socialPlatform,
+                    'transport_type': 'beacon'
+                });
+            }
+        });
+    </script>
 
-  <title>Dharmik Mehta - Digital Profile</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description"
+          content="Dharmik Mehta - Senior AI Engineer specializing in NLP, Machine Learning, and Generative AI"/>
+    <meta name="author" content="Dharmik Mehta"/>
+    <meta name="keywords"
+          content="AI Engineer, Dharmik Mehta, Machine Learning, NLP, Generative AI, Python, Retrieval-Augmented Generation (RAG), LLM Fine-tuning, Agentic AI, Cloud Computing"/>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Dharmik Mehta - Digital Profile</title>
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
-    rel="stylesheet" />
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-  <!-- <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet" /> -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" /> -->
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+          rel="stylesheet"/>
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <!-- <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" /> -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet"/>
 
-  <!-- Custom Font Styles -->
-  <style>
-    body {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet"/>
 
-    .subheading {
-      font-size: 2rem;
-      font-weight: 500;
-      letter-spacing: 0.5px;
-      margin-bottom: 2.5rem;
-    }
+    <!-- Custom Font Styles -->
+    <style>
+        body {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
 
-    .subheading a {
-      font-weight: 600;
-      color: #bd5d38;
-    }
+        .subheading {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-bottom: 2.5rem;
+        }
 
-    h1 {
-      font-size: 5.5rem;
-      font-weight: 900;
-      letter-spacing: 1px;
-      margin-bottom: 1.5rem;
-      line-height: 1.2;
-    }
+        .subheading a {
+            font-weight: 600;
+            color: #bd5d38;
+        }
 
-    .text-primary {
-      font-weight: 900;
-      letter-spacing: 1px;
-      color: #bd5d38;
-    }
+        h1 {
+            font-size: 5.5rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
 
-    h2 {
-      font-size: 3rem;
-      font-weight: 600;
-    }
+        .text-primary {
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: #bd5d38;
+        }
 
-    h3 {
-      font-size: 2rem;
-      font-weight: 600;
-    }
+        h2 {
+            font-size: 3rem;
+            font-weight: 600;
+        }
 
-    p {
-      font-size: 1.1rem;
-      color: #34495e;
-      line-height: 1.8;
-      text-align: justify;
-    }
+        h3 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
 
-    .fa-ul li {
-      font-size: 1.1rem;
-      color: #34495e;
-      line-height: 1.8;
-      text-align: justify;
-    }
+        p {
+            font-size: 1.1rem;
+            color: #34495e;
+            line-height: 1.8;
+            text-align: justify;
+        }
 
-    /* Preserve devicon sizes */
-    .devicons,
-    .devicon {
-      font-size: 2.5rem !important;
-      width: 2.5rem !important;
-      height: 2.5rem !important;
-      line-height: 2.5rem !important;
-    }
+        .fa-ul li {
+            font-size: 1.1rem;
+            color: #34495e;
+            line-height: 1.8;
+            text-align: justify;
+        }
 
-    .list-inline-item {
-      font-size: 1.1rem;
-    }
+        /* Preserve devicon sizes */
+        .devicons,
+        .devicon {
+            font-size: 2.5rem !important;
+            width: 2.5rem !important;
+            height: 2.5rem !important;
+            line-height: 2.5rem !important;
+        }
 
-    .btn-primary {
-      background-color: #bd5d38;
-      border-color: #bd5d38;
-      padding: 0.8rem 2rem;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      transition: all 0.3s ease;
-    }
+        .list-inline-item {
+            font-size: 1.1rem;
+        }
 
-    .btn-primary:hover {
-      background-color: #a44d2e;
-      border-color: #a44d2e;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(189, 93, 56, 0.2);
-    }
+        .btn-primary {
+            background-color: #bd5d38;
+            border-color: #bd5d38;
+            padding: 0.8rem 2rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
 
-    .btn-primary:focus {
-      box-shadow: 0 0 0 0.2rem rgba(189, 93, 56, 0.25);
-    }
+        .btn-primary:hover {
+            background-color: #a44d2e;
+            border-color: #a44d2e;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(189, 93, 56, 0.2);
+        }
 
-    .btn-primary i {
-      margin-right: 8px;
-    }
+        .btn-primary:focus {
+            box-shadow: 0 0 0 0.2rem rgba(189, 93, 56, 0.25);
+        }
 
-    .resume-content {
-      flex: 1;
-      padding-right: 2rem;
-    }
+        .btn-primary i {
+            margin-right: 8px;
+        }
 
-    .resume-date {
-      min-width: 200px;
-      text-align: right;
-    }
+        .resume-content {
+            flex: 1;
+            padding-right: 2rem;
+        }
 
-    .resume-content p {
-      margin-bottom: 0;
-      text-align: justify;
-    }
+        .resume-date {
+            min-width: 200px;
+            text-align: right;
+        }
 
-    .resume-item {
-      margin-bottom: 2rem;
-    }
+        .resume-content p {
+            margin-bottom: 0;
+            text-align: justify;
+        }
 
-    /* Projects and Awards specific styles */
-    #projects p,
-    #awards p,
-    #projects .fa-ul li,
-    #awards .fa-ul li,
-    #skills .fa-ul li {
-      text-align: left;
-    }
+        .resume-item {
+            margin-bottom: 2rem;
+        }
 
-    /* Responsive Styles */
-    @media (max-width: 768px) {
-      body {
-        font-size: 1rem;
-      }
+        /* Projects and Awards specific styles */
+        #projects p,
+        #awards p,
+        #projects .fa-ul li,
+        #awards .fa-ul li,
+        #skills .fa-ul li {
+            text-align: left;
+        }
 
-      h1 {
-        font-size: 3.5rem;
-        line-height: 1.2;
-      }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                font-size: 1rem;
+            }
 
-      h2 {
-        font-size: 2.5rem;
-      }
+            h1 {
+                font-size: 3.5rem;
+                line-height: 1.2;
+            }
 
-      h3 {
-        font-size: 1.8rem;
-      }
+            h2 {
+                font-size: 2.5rem;
+            }
 
-      .subheading {
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
-      }
+            h3 {
+                font-size: 1.8rem;
+            }
 
-      p {
-        font-size: 1rem;
-        line-height: 1.6;
-      }
+            .subheading {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
 
-      .resume-content {
-        padding-right: 0;
-        margin-bottom: 1rem;
-      }
+            p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
 
-      .resume-date {
-        min-width: auto;
-        margin-bottom: 0;
-        text-align: left;
-        font-size: 0.9rem;
-        padding-left: 1.5rem;
-      }
+            .resume-content {
+                padding-right: 0;
+                margin-bottom: 1rem;
+            }
 
-      .resume-item {
-        margin-bottom: 2.5rem;
-      }
+            .resume-date {
+                min-width: auto;
+                margin-bottom: 0;
+                text-align: left;
+                font-size: 0.9rem;
+                padding-left: 1.5rem;
+            }
 
-      .btn-primary {
-        padding: 0.6rem 1.5rem;
-        font-size: 1rem;
-      }
+            .resume-item {
+                margin-bottom: 2.5rem;
+            }
 
-      .list-inline-item {
-        font-size: 1rem;
-      }
+            .btn-primary {
+                padding: 0.6rem 1.5rem;
+                font-size: 1rem;
+            }
 
-      .devicons,
-      .devicon {
-        font-size: 2rem !important;
-        width: 2rem !important;
-        height: 2rem !important;
-        line-height: 2rem !important;
-      }
+            .list-inline-item {
+                font-size: 1rem;
+            }
 
-      /* Ensure projects, awards, and workflow sections maintain left alignment */
-      #projects p,
-      #awards p,
-      #projects .fa-ul li,
-      #awards .fa-ul li,
-      #skills .fa-ul li {
-        text-align: left;
-      }
-    }
+            .devicons,
+            .devicon {
+                font-size: 2rem !important;
+                width: 2rem !important;
+                height: 2rem !important;
+                line-height: 2rem !important;
+            }
 
-    @media (max-width: 576px) {
-      h1 {
-        font-size: 3rem;
-      }
+            /* Ensure projects, awards, and workflow sections maintain left alignment */
+            #projects p,
+            #awards p,
+            #projects .fa-ul li,
+            #awards .fa-ul li,
+            #skills .fa-ul li {
+                text-align: left;
+            }
+        }
 
-      h2 {
-        font-size: 2rem;
-      }
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 3rem;
+            }
 
-      h3 {
-        font-size: 1.5rem;
-      }
+            h2 {
+                font-size: 2rem;
+            }
 
-      .subheading {
-        font-size: 1.2rem;
-      }
+            h3 {
+                font-size: 1.5rem;
+            }
 
-      .resume-section {
-        padding: 1rem !important;
-      }
+            .subheading {
+                font-size: 1.2rem;
+            }
 
-      .resume-date {
-        font-size: 0.85rem;
-        padding-left: 1rem;
-      }
+            .resume-section {
+                padding: 1rem !important;
+            }
 
-      .resume-item {
-        margin-bottom: 2rem;
-      }
+            .resume-date {
+                font-size: 0.85rem;
+                padding-left: 1rem;
+            }
 
-      .btn-primary {
-        width: 100%;
-        margin-bottom: 1rem;
-      }
+            .resume-item {
+                margin-bottom: 2rem;
+            }
 
-      .d-flex.align-items-center {
-        flex-direction: column;
-        align-items: center !important;
-      }
+            .btn-primary {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
 
-      .list-social-icons {
-        margin-top: 1rem;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-      }
+            .d-flex.align-items-center {
+                flex-direction: column;
+                align-items: center !important;
+            }
 
-      /* Ensure projects, awards, and workflow sections maintain left alignment */
-      #projects p,
-      #awards p,
-      #projects .fa-ul li,
-      #awards .fa-ul li,
-      #skills .fa-ul li {
-        text-align: left;
-      }
-    }
-  </style>
+            .list-social-icons {
+                margin-top: 1rem;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
 
-  <!-- Loading Spinner Styles -->
-  <style>
-    #loader-wrapper {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 9999;
-      background-color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: opacity 0.5s ease-out;
-    }
+            /* Ensure projects, awards, and workflow sections maintain left alignment */
+            #projects p,
+            #awards p,
+            #projects .fa-ul li,
+            #awards .fa-ul li,
+            #skills .fa-ul li {
+                text-align: left;
+            }
+        }
+    </style>
 
-    #loader {
-      width: 50px;
-      height: 50px;
-      border: 5px solid #f3f3f3;
-      border-top: 5px solid #bd5d38;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
+    <!-- Loading Spinner Styles -->
+    <style>
+        #loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s ease-out;
+        }
 
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
+        #loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #bd5d38;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
 
-      100% {
-        transform: rotate(360deg);
-      }
-    }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
 
-    .loader-hidden {
-      opacity: 0;
-      pointer-events: none;
-    }
-  </style>
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loader-hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 <body id="page-top">
-  <!-- Loading Spinner -->
-  <div id="loader-wrapper">
+<!-- Loading Spinner -->
+<div id="loader-wrapper">
     <div id="loader"></div>
-  </div>
+</div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Digital Profile</span>
-      <!-- <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile_dm.png" alt="" />
-      </span> -->
+        <span class="d-block d-lg-none">Digital Profile</span>
+        <!-- <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile_dm.png" alt="" />
+        </span> -->
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-      <div class="my-auto">
-        <h1 class="mb-0">
-          Dharmik
-          <span class="text-primary">Mehta</span>
-        </h1>
-        <div class="subheading mb-5.9">
-          AI/ML | GenAI - Engineer · Ahmedabad, India. ·
-          <a href="mailto:dharmikmehta1998@email.com">dharmikmehta1998@email.com</a>
-        </div>
-        <p class="mb-4">
-          Hello!
-          I'm Dharmik Mehta, a Senior AI Engineer with over 5.5 years of experience in Natural Language
-          Processing (NLP) and Text Data Analysis. My journey in AI/ML has been driven by a passion for transforming
-          complex data into meaningful insights and innovative solutions.
-        </p>
-        <p class="mb-4">
-          At the forefront of AI innovation, I specialize in Retrieval-Augmented Generation (RAG), Large Language Models
-          (LLMs), and scalable GenAI solutions. My expertise spans across developing robust NLP algorithms, implementing
-          end-to-end ML pipelines, and creating high-impact AI applications that bridge cutting-edge research with
-          real-world challenges.
-        </p>
-        <p class="mb-4">
-          With a strong foundation in Information Technology and multiple industry certifications, I've successfully
-          delivered solutions that leverage state-of-the-art AI/ML techniques. My work focuses on:
-        </p>
-        <ul class="fa-ul mb-4">
-          <li>
-            <i class="fa-li fa fa-check text-primary"></i>
-            Building scalable GenAI solutions with RAG technology and open-source LLMs (LLaMA, Mistral, BERT)
-          </li>
-          <li>
-            <i class="fa-li fa fa-check text-primary"></i>
-            Fine-tuning and optimizing Large Language Models for specific domains
-          </li>
-          <li>
-            <i class="fa-li fa fa-check text-primary"></i>
-            Developing Agentic AI systems and autonomous decision-making frameworks
-          </li>
-          <li>
-            <i class="fa-li fa fa-check text-primary"></i>
-            Implementing MLOps practices with Docker, Kubernetes, and Airflow
-          </li>
-          <li>
-            <i class="fa-li fa fa-check text-primary"></i>
-            Designing and deploying cloud-native AI solutions on AWS, GCP, and Azure
-          </li>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+            </li>
         </ul>
-        <p class="mb-4">
-          I'm passionate about pushing the boundaries of what's possible with AI and am always excited to collaborate on
-          cutting-edge projects. Whether you're looking to discuss potential opportunities, share ideas about AI/ML, or
-          explore innovative solutions, I'd love to connect!
-        </p>
-        <div class="d-flex align-items-center mb-4">
-          <a href="mailto:dharmikmehta1998@email.com" class="btn btn-primary btn-lg mr-4">
-            <i class="fa fa-envelope"></i> Let's Connect
-          </a>
-          <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/dharmikm9" target="_blank">
+    </div>
+</nav>
+
+<div class="container-fluid p-0">
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+            <h1 class="mb-0">
+                Dharmik
+                <span class="text-primary">Mehta</span>
+            </h1>
+            <div class="subheading mb-5.9">
+                AI/ML | GenAI - Engineer · Ahmedabad, India. ·
+                <a href="mailto:dharmikmehta1998@email.com">dharmikmehta1998@email.com</a>
+            </div>
+            <p class="mb-4">
+                Hello!
+                I'm Dharmik Mehta, a Senior AI Engineer with over 5.5 years of experience in Natural Language
+                Processing (NLP) and Text Data Analysis. My journey in AI/ML has been driven by a passion for
+                transforming
+                complex data into meaningful insights and innovative solutions.
+            </p>
+            <p class="mb-4">
+                At the forefront of AI innovation, I specialize in Retrieval-Augmented Generation (RAG), Large Language
+                Models
+                (LLMs), and scalable GenAI solutions. My expertise spans across developing robust NLP algorithms,
+                implementing
+                end-to-end ML pipelines, and creating high-impact AI applications that bridge cutting-edge research with
+                real-world challenges.
+            </p>
+            <p class="mb-4">
+                With a strong foundation in Information Technology and multiple industry certifications, I've
+                successfully
+                delivered solutions that leverage state-of-the-art AI/ML techniques. My work focuses on:
+            </p>
+            <ul class="fa-ul mb-4">
+                <li>
+                    <i class="fa-li fa fa-check text-primary"></i>
+                    Building scalable GenAI solutions with RAG technology and open-source LLMs (LLaMA, Mistral, BERT)
+                </li>
+                <li>
+                    <i class="fa-li fa fa-check text-primary"></i>
+                    Fine-tuning and optimizing Large Language Models for specific domains
+                </li>
+                <li>
+                    <i class="fa-li fa fa-check text-primary"></i>
+                    Developing Agentic AI systems and autonomous decision-making frameworks
+                </li>
+                <li>
+                    <i class="fa-li fa fa-check text-primary"></i>
+                    Implementing MLOps practices with Docker, Kubernetes, and Airflow
+                </li>
+                <li>
+                    <i class="fa-li fa fa-check text-primary"></i>
+                    Designing and deploying cloud-native AI solutions on AWS, GCP, and Azure
+                </li>
+            </ul>
+            <p class="mb-4">
+                I'm passionate about pushing the boundaries of what's possible with AI and am always excited to
+                collaborate on
+                cutting-edge projects. Whether you're looking to discuss potential opportunities, share ideas about
+                AI/ML, or
+                explore innovative solutions, I'd love to connect!
+            </p>
+            <div class="d-flex align-items-center mb-4">
+                <a href="mailto:dharmikmehta1998@email.com" class="btn btn-primary btn-lg mr-4">
+                    <i class="fa fa-envelope"></i> Let's Connect
+                </a>
+                <ul class="list-inline list-social-icons mb-0">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/dharmikm9" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
                 </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/dharmikm9" target="_blank">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/dharmikm9" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                 </span>
-              </a>
-            </li>
-          </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-      <div class="my-auto">
-        <h2 class="mb-5">Experience</h2>
+        <div class="my-auto">
+            <h2 class="mb-5">Experience</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Senior AI Engineer</h3>
-            <div class="subheading mb-3">Accenture</div>
-            <p>
-              Developed an advanced recommendation system using statistical
-              machine learning models, focusing on a robust feature
-              engineering process to extract relevant features for efficient
-              model training. Managed the end-to-end machine learning
-              lifecycle, from data ingestion to model training and deployment,
-              while automating key processes. Developed Python scripts for
-              data transformation and embedding management with large language
-              models, implementing an application based on Retrieval-Augmented
-              Generation (RAG) technology. Additionally, designed and exposed
-              various APIs to facilitate model deployment and serving.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">November 2021 - Present</span>
-          </div>
-        </div>
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                    <h3 class="mb-0">Senior AI Engineer</h3>
+                    <div class="subheading mb-3">Accenture</div>
+                    <p>
+                        Developed an advanced recommendation system using statistical
+                        machine learning models, focusing on a robust feature
+                        engineering process to extract relevant features for efficient
+                        model training. Managed the end-to-end machine learning
+                        lifecycle, from data ingestion to model training and deployment,
+                        while automating key processes. Developed Python scripts for
+                        data transformation and embedding management with large language
+                        models, implementing an application based on Retrieval-Augmented
+                        Generation (RAG) technology. Additionally, designed and exposed
+                        various APIs to facilitate model deployment and serving.
+                    </p>
+                </div>
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">November 2021 - Present</span>
+                </div>
+            </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Software Engineer | R&D Team</h3>
-            <div class="subheading mb-3">Knovos</div>
-            <p>
-              Proficiently developed machine learning models for various text
-              analytics tasks, including document classification, medical
-              named entity recognition (NER), and multilingual contract
-              classification. Collected data from diverse sources through web
-              scraping techniques and executed effective data preprocessing
-              methods such as cleaning, transformation, and reduction.
-              Demonstrated expertise in creating machine learning and deep
-              learning models using transfer learning techniques with Keras
-              and TensorFlow libraries. Successfully integrated these models
-              into existing products. As part of the R&D team, contributed to
-              research and exploration in machine learning methodologies and
-              applications, driving innovation and enhancing overall
-              capabilities.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">May 2019 - October 2021</span>
-          </div>
-        </div>
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                    <h3 class="mb-0">Software Engineer | R&D Team</h3>
+                    <div class="subheading mb-3">Knovos</div>
+                    <p>
+                        Proficiently developed machine learning models for various text
+                        analytics tasks, including document classification, medical
+                        named entity recognition (NER), and multilingual contract
+                        classification. Collected data from diverse sources through web
+                        scraping techniques and executed effective data preprocessing
+                        methods such as cleaning, transformation, and reduction.
+                        Demonstrated expertise in creating machine learning and deep
+                        learning models using transfer learning techniques with Keras
+                        and TensorFlow libraries. Successfully integrated these models
+                        into existing products. As part of the R&D team, contributed to
+                        research and exploration in machine learning methodologies and
+                        applications, driving innovation and enhancing overall
+                        capabilities.
+                    </p>
+                </div>
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">May 2019 - October 2021</span>
+                </div>
+            </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Training and Development Intern</h3>
-            <div class="subheading mb-3">Knovos</div>
-            <p>
-              Explored cutting-edge technologies, including machine learning,
-              natural language processing (NLP), big data, Hadoop, Java 8, and
-              Apache Solr. Acquired valuable knowledge in programming
-              practices and coding standards while gaining exposure to a
-              variety of tools and technologies. This internship provided a
-              strong foundation in emerging technologies and their
-              applications, enhancing technical skills and contributing to a
-              deeper understanding of the field.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">January 2019 - April 2019</span>
-          </div>
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                    <h3 class="mb-0">Training and Development Intern</h3>
+                    <div class="subheading mb-3">Knovos</div>
+                    <p>
+                        Explored cutting-edge technologies, including machine learning,
+                        natural language processing (NLP), big data, Hadoop, Java 8, and
+                        Apache Solr. Acquired valuable knowledge in programming
+                        practices and coding standards while gaining exposure to a
+                        variety of tools and technologies. This internship provided a
+                        strong foundation in emerging technologies and their
+                        applications, enhancing technical skills and contributing to a
+                        deeper understanding of the field.
+                    </p>
+                </div>
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">January 2019 - April 2019</span>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-      <div class="my-auto">
-        <h2 class="mb-5">Education</h2>
+        <div class="my-auto">
+            <h2 class="mb-5">Education</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row mb-4">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Gujarat Technological University</h3>
-            <div class="subheading mb-3">Bachelor of Engineering in Information and Technology</div>
-            <p>CGPA: 8.04</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">2015 - 2019</span>
-          </div>
+            <div class="resume-item d-flex flex-column flex-md-row mb-4">
+                <div class="resume-content mr-auto">
+                    <h3 class="mb-0">Gujarat Technological University</h3>
+                    <div class="subheading mb-3">Bachelor of Engineering in Information and Technology</div>
+                    <p>CGPA: 8.04</p>
+                </div>
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">2015 - 2019</span>
+                </div>
+            </div>
+            <div class="resume-item d-flex flex-column flex-md-row mb-4">
+                <div class="resume-content mr-auto">
+                    <h3 class="mb-0">Gujarat Secondary and Higher Secondary Education Board</h3>
+                    <div class="subheading mb-3">12th Science</div>
+                    <p>Percentage: 63.47</p>
+                </div>
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">2013 - 2015</span>
+                </div>
+            </div>
+            <div class="resume-item d-flex flex-column flex-md-row mb-4">
+                <div class="resume-content mr-auto">
+                    <h3 class="mb-0">Gujarat Secondary and Higher Secondary Education Board</h3>
+                    <div class="subheading mb-3">10th Standard</div>
+                    <p>Percentage: 83.33</p>
+                </div>
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">2012 - 2013</span>
+                </div>
+            </div>
         </div>
-        <div class="resume-item d-flex flex-column flex-md-row mb-4">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Gujarat Secondary and Higher Secondary Education Board</h3>
-            <div class="subheading mb-3">12th Science</div>
-            <p>Percentage: 63.47</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">2013 - 2015</span>
-          </div>
-        </div>
-        <div class="resume-item d-flex flex-column flex-md-row mb-4">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Gujarat Secondary and Higher Secondary Education Board</h3>
-            <div class="subheading mb-3">10th Standard</div>
-            <p>Percentage: 83.33</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">2012 - 2013</span>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-      <div class="my-auto">
-        <h2 class="mb-5">Skills</h2>
+        <div class="my-auto">
+            <h2 class="mb-5">Skills</h2>
 
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline list-icons mb-3">
-          <!-- AI/ML Tools -->
-          <li class="list-inline-item">
-            <i class="devicons devicon-python-plain" title="Python"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-pandas-plain" title="Pandas"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-scikitlearn-plain" title="Scikit-learn"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-numpy-plain" title="NumPy"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-keras-plain" title="Keras"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-tensorflow-original" title="TensorFlow"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-pytorch-original" title="PyTorch"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-kaggle-original" title="Kaggle"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-opencv-plain" title="OpenCV"></i>
-          </li>
-          <!-- Web Frameworks -->
-          <li class="list-inline-item">
-            <i class="devicons devicon-flask-original" title="Flask"></i>
-          </li>
-          <!-- Cloud Platforms -->
-          <li class="list-inline-item">
-            <i class="devicons devicon-googlecloud-plain" title="Google Cloud Platform"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-amazonwebservices-plain-wordmark" title="Amazon Web Services"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-azure-plain" title="Microsoft Azure"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-terraform-plain" title="Terraform"></i>
-          </li>
+            <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+            <ul class="list-inline list-icons mb-3">
+                <!-- AI/ML Tools -->
+                <li class="list-inline-item">
+                    <i class="devicons devicon-python-plain" title="Python"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-pandas-plain" title="Pandas"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-scikitlearn-plain" title="Scikit-learn"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-numpy-plain" title="NumPy"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-keras-plain" title="Keras"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-tensorflow-original" title="TensorFlow"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-pytorch-original" title="PyTorch"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-kaggle-original" title="Kaggle"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-opencv-plain" title="OpenCV"></i>
+                </li>
+                <!-- Web Frameworks -->
+                <li class="list-inline-item">
+                    <i class="devicons devicon-flask-original" title="Flask"></i>
+                </li>
+                <!-- Cloud Platforms -->
+                <li class="list-inline-item">
+                    <i class="devicons devicon-googlecloud-plain" title="Google Cloud Platform"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-amazonwebservices-plain-wordmark" title="Amazon Web Services"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-azure-plain" title="Microsoft Azure"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-terraform-plain" title="Terraform"></i>
+                </li>
 
-          <!-- Development Tools -->
-          <li class="list-inline-item">
-            <i class="devicons devicon-jupyter-plain" title="Jupyter"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-linux-plain" title="Linux"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-github-original" title="GitHub"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon devicon-git-plain" title="Git"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-azuredevops-plain" title="Azure DevOps"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-apacheairflow-plain" title="Apache Airflow"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-docker-plain" title="Docker"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-kubernetes-plain" title="Kubernetes"></i>
-          </li>
+                <!-- Development Tools -->
+                <li class="list-inline-item">
+                    <i class="devicons devicon-jupyter-plain" title="Jupyter"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-linux-plain" title="Linux"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-github-original" title="GitHub"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon devicon-git-plain" title="Git"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-azuredevops-plain" title="Azure DevOps"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-apacheairflow-plain" title="Apache Airflow"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-docker-plain" title="Docker"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-kubernetes-plain" title="Kubernetes"></i>
+                </li>
 
-          <!-- Databases -->
-          <li class="list-inline-item">
-            <i class="devicons devicon-mongodb-plain" title="MongoDB"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-postgresql-plain" title="PostgreSQL"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-mysql-plain" title="MySQL"></i>
-          </li>
+                <!-- Databases -->
+                <li class="list-inline-item">
+                    <i class="devicons devicon-mongodb-plain" title="MongoDB"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-postgresql-plain" title="PostgreSQL"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-mysql-plain" title="MySQL"></i>
+                </li>
 
-          <!-- Programming Languages -->
-          <li class="list-inline-item">
-            <i class="devicons devicon-java-plain" title="Java"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-html5-plain-wordmark" title="HTML5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-css3-plain-wordmark" title="CSS3"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-javascript-plain" title="JavaScript"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicon-json-plain" title="JSON"></i>
-          </li>
+                <!-- Programming Languages -->
+                <li class="list-inline-item">
+                    <i class="devicons devicon-java-plain" title="Java"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-html5-plain-wordmark" title="HTML5"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-css3-plain-wordmark" title="CSS3"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-javascript-plain" title="JavaScript"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicon-json-plain" title="JSON"></i>
+                </li>
 
 
-          <!-- IDEs & Tools -->
-          <li class="list-inline-item">
-            <i class="devicons devicon-vscode-plain" title="Visual Studio Code"></i>
-          </li>
+                <!-- IDEs & Tools -->
+                <li class="list-inline-item">
+                    <i class="devicons devicon-vscode-plain" title="Visual Studio Code"></i>
+                </li>
 
-          <!-- Other Tools -->
-          <li class="list-inline-item">
-            <i class="devicons devicon-apache-plain" title="Apache"></i>
-          </li>
-        </ul>
+                <!-- Other Tools -->
+                <li class="list-inline-item">
+                    <i class="devicons devicon-apache-plain" title="Apache"></i>
+                </li>
+            </ul>
 
-        <div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Data Collection, Ingestion &amp; Preprocessing
-          </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Feature Engineering
-          </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Model Development &amp; Testing
-          </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Integration &amp; Deployment
-          </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Monitoring &amp; Maintenance
-          </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams
-          </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum
-          </li>
-        </ul>
-      </div>
+            <div class="subheading mb-3">Workflow</div>
+            <ul class="fa-ul mb-0">
+                <li>
+                    <i class="fa-li fa fa-check"></i>
+                    Data Collection, Ingestion &amp; Preprocessing
+                </li>
+                <li>
+                    <i class="fa-li fa fa-check"></i>
+                    Feature Engineering
+                </li>
+                <li>
+                    <i class="fa-li fa fa-check"></i>
+                    Model Development &amp; Testing
+                </li>
+                <li>
+                    <i class="fa-li fa fa-check"></i>
+                    Integration &amp; Deployment
+                </li>
+                <li>
+                    <i class="fa-li fa fa-check"></i>
+                    Monitoring &amp; Maintenance
+                </li>
+                <li>
+                    <i class="fa-li fa fa-check"></i>
+                    Cross Functional Teams
+                </li>
+                <li>
+                    <i class="fa-li fa fa-check"></i>
+                    Agile Development &amp; Scrum
+                </li>
+            </ul>
+        </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-      <div class="my-auto">
-        <h2 class="mb-5">Projects</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            <strong>BookCrane</strong> - Lift up your next readings !!
+        <div class="my-auto">
+            <h2 class="mb-5">Projects</h2>
             <ul class="fa-ul mb-0">
-              <li>
-                BookCrane is a cutting-edge book recommendation tool designed to enhance your reading experience through
-                advanced AI technologies. It analyzes user preferences to provide highly personalized book suggestions,
-                making it easier to discover your next favourite read.
-              </li>
-              <li>
-                <strong> Project URL :</strong> <a href="https://dharmikm9.github.io/BookCrane/"
-                  target="_blank">BookCrane</a>
-              </li>
-            </ul>
-          </li>
-          <br />
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            <strong>BlessedBabyNames</strong> - Tailored Blessings, AI-Generated Names.
-            <ul class="fa-ul mb-0">
-              <li>
-                Baby Name Suggester is an application that leverages Python, OpenAI, Langchain, and Streamlit to suggest
-                unique and culturally significant baby names. It uses advanced natural language processing capabilities
-                to provide a personalized naming experience.
-              </li>
-              <li>
-                <strong> Project URL :</strong> <a href="https://blessedbabynames9.streamlit.app/"
-                  target="_blank">BlessedBabyNames</a>
-              </li>
-            </ul>
-          </li>
+                <li>
+                    <i class="fa-li fa fa-trophy text-warning"></i>
+                    <strong>AnalytiChat</strong> - Chat with you Excel Data !!
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            AnalytiChat is an AI-powered tool that allows users to chat with their CSV/Excel data and
+                            gain valuable insights simply by asking questions in natural language. No technical
+                            expertise is required! With AnalytiChat, users can not only derive insights but also
+                            generate metrics and charts directly from their data.
+                        </li>
+                        <li>
+                            <strong> Project URL :</strong> <a href="https://github.com/dharmikm9/AnalytiChat/"
+                                                               target="_blank">AnalytiChat</a>
+                        </li>
+                    </ul>
+                </li>
+                <br/>
+                <li>
+                    <i class="fa-li fa fa-trophy text-warning"></i>
+                    <strong>BookCrane</strong> - Lift up your next readings !!
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            BookCrane is a cutting-edge book recommendation tool designed to enhance your reading
+                            experience through
+                            advanced AI technologies. It analyzes user preferences to provide highly personalized book
+                            suggestions,
+                            making it easier to discover your next favourite read.
+                        </li>
+                        <li>
+                            <strong> Project URL :</strong> <a href="https://dharmikm9.github.io/BookCrane/"
+                                                               target="_blank">BookCrane</a>
+                        </li>
+                    </ul>
+                </li>
+                <br/>
+                <li>
+                    <i class="fa-li fa fa-trophy text-warning"></i>
+                    <strong>BlessedBabyNames</strong> - Tailored Blessings, AI-Generated Names.
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            Baby Name Suggester is an application that leverages Python, OpenAI, Langchain, and
+                            Streamlit to suggest
+                            unique and culturally significant baby names. It uses advanced natural language processing
+                            capabilities
+                            to provide a personalized naming experience.
+                        </li>
+                        <li>
+                            <strong> Project URL :</strong> <a href="https://blessedbabynames9.streamlit.app/"
+                                                               target="_blank">BlessedBabyNames</a>
+                        </li>
+                    </ul>
+                </li>
 
-          <br />
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            <strong>AIEntityLens</strong> - AI-Powered Entity Discovery.
-            <ul class="fa-ul mb-0">
-              <li>
-                AIEntityLens is a Streamlit-based application for extracting Named Entity Recognition (NER) entities
-                from provided text inputs. It leverages NLP models to identify and categorize entities such as persons,
-                organizations, and locations.
-              </li>
-              <li>
-                <strong> Project URL :</strong> <a href="https://github.com/dharmikm9/AIEntityLens"
-                  target="_blank">AIEntityLens</a>
-              </li>
+                <br/>
+                <li>
+                    <i class="fa-li fa fa-trophy text-warning"></i>
+                    <strong>AIEntityLens</strong> - AI-Powered Entity Discovery.
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            AIEntityLens is a Streamlit-based application for extracting Named Entity Recognition (NER)
+                            entities
+                            from provided text inputs. It leverages NLP models to identify and categorize entities such
+                            as persons,
+                            organizations, and locations.
+                        </li>
+                        <li>
+                            <strong> Project URL :</strong> <a href="https://github.com/dharmikm9/AIEntityLens"
+                                                               target="_blank">AIEntityLens</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-          </li>
-        </ul>
-      </div>
+        </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-      <div class="my-auto">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Experts@myC Triumph Award - FY24 July - Accenture - July'24
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Pinnacle Award - FY23 Q2 - Accenture - April'23
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Star of the Month - FY22 June - Accenture - June'22
-          </li>
-          <br />
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            Build and Deploy a Generative AI Solution Using a RAG Framework
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            Google Cloud Certified: Professional Machine Learning Engineer
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            Google Cloud Certified: Associate Cloud Engineer
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            Google Cloud Certified: Cloud Digital Leader
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            Machine Leanring by Andrew Ng
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            Microsoft Certified: Azure Fundamentals
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            Microsoft Certified: Power Platform Fundamentals
-          </li>
-        </ul>
-      </div>
+        <div class="my-auto">
+            <h2 class="mb-5">Awards &amp; Certifications</h2>
+            <ul class="fa-ul mb-0">
+                <li>
+                    <i class="fa-li fa fa-trophy text-warning"></i>
+                    Experts@myC Triumph Award - FY24 July - Accenture - July'24
+                </li>
+                <li>
+                    <i class="fa-li fa fa-trophy text-warning"></i>
+                    Pinnacle Award - FY23 Q2 - Accenture - April'23
+                </li>
+                <li>
+                    <i class="fa-li fa fa-trophy text-warning"></i>
+                    Star of the Month - FY22 June - Accenture - June'22
+                </li>
+                <br/>
+                <li>
+                    <i class="fa-li fa fa-certificate text-warning"></i>
+                    Build and Deploy a Generative AI Solution Using a RAG Framework
+                </li>
+                <li>
+                    <i class="fa-li fa fa-certificate text-warning"></i>
+                    Google Cloud Certified: Professional Machine Learning Engineer
+                </li>
+                <li>
+                    <i class="fa-li fa fa-certificate text-warning"></i>
+                    Google Cloud Certified: Associate Cloud Engineer
+                </li>
+                <li>
+                    <i class="fa-li fa fa-certificate text-warning"></i>
+                    Google Cloud Certified: Cloud Digital Leader
+                </li>
+                <li>
+                    <i class="fa-li fa fa-certificate text-warning"></i>
+                    Machine Leanring by Andrew Ng
+                </li>
+                <li>
+                    <i class="fa-li fa fa-certificate text-warning"></i>
+                    Microsoft Certified: Azure Fundamentals
+                </li>
+                <li>
+                    <i class="fa-li fa fa-certificate text-warning"></i>
+                    Microsoft Certified: Power Platform Fundamentals
+                </li>
+            </ul>
+        </div>
     </section>
-  </div>
+</div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/resume.min.js"></script>
 
-  <!-- Loading Animation Script -->
-  <script>
+<!-- Loading Animation Script -->
+<script>
     window.addEventListener('load', function () {
-      // Hide loader after page is fully loaded
-      const loader = document.getElementById('loader-wrapper');
-      loader.classList.add('loader-hidden');
+        // Hide loader after page is fully loaded
+        const loader = document.getElementById('loader-wrapper');
+        loader.classList.add('loader-hidden');
 
-      // Remove loader from DOM after animation
-      setTimeout(function () {
-        loader.style.display = 'none';
-      }, 500);
+        // Remove loader from DOM after animation
+        setTimeout(function () {
+            loader.style.display = 'none';
+        }, 500);
     });
-  </script>
+</script>
 </body>
 
 </html>
